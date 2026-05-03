@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+.head{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.bookstore-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.bookstore-section h1 {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.bookstore-section p {
+  color: #aaaaaa;
+  margin-bottom: 40px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+
+.card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 2 / 3; 
+  object-fit: cover;
+  border-radius: 12px; 
+  display: block;
+}
+
+
+
+.card-info {
+  margin-top: 15px;
+}
+
+.author {
+  display: block;
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+.title {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; 
+  }
+}
